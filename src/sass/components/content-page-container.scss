@@ -1,0 +1,16 @@
+.content-page-container {
+  padding: 20px 0 40px;
+
+  @include adaptive-for-tablet {
+    padding: 60px 0;
+  }
+}
+
+.content-page-status {
+  margin: 0;
+  font-weight: var(--bold-font-weight);
+  font-size: 14px;
+  color: var(--secondary-accent-color);
+  text-transform: uppercase;
+  text-align: center;
+}
