@@ -2,8 +2,8 @@
   padding: 0 20px;
   height: 230px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-                    url(../images/home/home-header-bg-mobile-1x.jpg);
-    background-color: var(--primary-text-color);
+    url(../images/home/home-header-bg-mobile-1x.jpg);
+  background-color: var(--primary-text-color);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -12,7 +12,7 @@
   screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-                      url(../images/home/home-header-bg-mobile-2x.jpg);
+      url(../images/home/home-header-bg-mobile-2x.jpg);
   }
 }
 
@@ -67,9 +67,14 @@
   display: flex;
   margin-block-end: 0;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   height: 44px;
-  margin-top: 45px;
+  margin-top: 46px;
+  @media screen and (min-width: 480px) {
+    & {
+      gap: 15px;
+    }
+  }
 }
 
 .library-nav-item {
@@ -80,7 +85,7 @@
 }
 
 .library-nav-button {
-  width: 136px;
+  width: 130px;
   height: 44px;
   border: 1px solid #ffffff;
   border-radius: 5px;
@@ -96,6 +101,11 @@
     background: #ff6b01;
     border: none;
     filter: drop-shadow(0px 8px 43px rgba(255, 107, 1, 0.6));
+  }
+  @media screen and(min-width:480px) {
+    & {
+      width: 136px;
+    }
   }
 }
 
@@ -200,14 +210,14 @@
   .header {
     padding: 0 70px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-                      url(../images/home/home-header-bg-tablet-1x.jpg);
+      url(../images/home/home-header-bg-tablet-1x.jpg);
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .header {
       background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-                        url(../images/home/home-header-bg-tablet-2x.jpg);
+        url(../images/home/home-header-bg-tablet-2x.jpg);
     }
   }
   .search-movie-input {
@@ -218,14 +228,14 @@
 @include adaptive-for-desktop {
   .header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-                      url(../images/home/home-header-bg-desktop-1x.jpg);
+      url(../images/home/home-header-bg-desktop-1x.jpg);
   }
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1024px),
     screen and (min-resolution: 192dpi) and (min-width: 1024px),
     screen and (min-resolution: 2dppx) and (min-width: 1024px) {
     .header {
       background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
-                        url(../images/home/home-header-bg-desktop-2x.jpg);
+        url(../images/home/home-header-bg-desktop-2x.jpg);
     }
   }
 }
