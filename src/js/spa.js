@@ -54,7 +54,7 @@ function realisePageSwiching(path) {
 }
 
 const navigateTo = path => {
-  history.pushState(null, null, path);
+  // history.pushState(null, null, path);
   realisePageSwiching(path);
 };
 window.addEventListener('popstate', () => {
